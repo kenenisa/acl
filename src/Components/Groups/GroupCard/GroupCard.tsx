@@ -3,7 +3,7 @@ import Person from "./Person/Person"
 
 function GroupCard({ group }: { group: any }) {
     return (
-        <Box sx={{}}>
+        <Box sx={{}} className="parallax groupParallax">
             <Box sx={{ mb: 3 }}>
                 <Typography variant="h4">Group {group.id}</Typography>
             </Box>
@@ -24,7 +24,7 @@ function GroupCard({ group }: { group: any }) {
                 </Stack>
             </Stack>
             <Stack>
-                {group.participants.map((person:any,key:number) => <Person person={person} key={key}/>)}
+                {group.participants.map((person: any, key: number) => <Person person={person} key={key} />)}
             </Stack>
         </Box>
     )

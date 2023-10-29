@@ -33,8 +33,8 @@ export const SingleElimination = ({ matches }: any) => {
 }
 function Brackets() {
     return (
-        <Box sx={{pb:5}}>
-            <Typography variant="h5">Brackets</Typography>
+        <Box sx={{pb:5}} className="parallax groupParallax">
+            <Typography variant="h5">Brackets (scroll from here)</Typography>
             <SingleElimination matches={window.data.brackets} />
         </Box>
     )

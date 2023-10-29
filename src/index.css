@@ -18,18 +18,27 @@
   transition: 100ms all ease-in-out;
 } */
 
-.parallax {
-  /* The image used */
-  background-image: url("champ.png");
 
-  /* Set a specific height */
-  /* min-height: 500px; */
+.parallax.groupParallax {
+  background-image: unset;
+}
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+@media only screen and (max-width: 768px) {
+  .parallax.groupParallax {
+    background-image: url("champ.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .parallax {
+    background-image: url("champ.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 /* a {
