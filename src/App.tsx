@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Brackets from './Components/Brackets/Brackets';
 
 function App() {
-  const [page, setPage] = useState('bracket');
+  const [page, setPage] = useState('group');
   const reverse: any = {
     'group': 'Brackets',
     'bracket': 'Groups'

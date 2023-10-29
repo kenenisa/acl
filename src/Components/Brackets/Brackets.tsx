@@ -2,7 +2,7 @@ import { Match, SVGViewer, SingleEliminationBracket, createTheme } from "@g-loot
 import { Box, Typography } from "@mui/material";
 import { useWindowSize } from "@uidotdev/usehooks";
 
-const theme = createTheme({
+const CUSTOM_THEME = createTheme({
     svgBackground: '#AAA',
 });
 export const SingleElimination = ({ matches }: any) => {
@@ -13,11 +13,17 @@ export const SingleElimination = ({ matches }: any) => {
         <SingleEliminationBracket
             matches={matches}
             matchComponent={Match}
-            theme={theme}
+            theme={CUSTOM_THEME}
 
             svgWrapper={({ children, ...props }) => {
                 return (
-                    <SVGViewer width={finalWidth + 100} height={finalHeight + 100} {...props}>
+                    <SVGViewer
+                        width={finalWidth + 100}
+                        height={finalHeight + 100}
+                        background="#3a1574"
+                        SVGBackground="#3a1574"
+                        {...props}
+                    >
                         {children}
                     </SVGViewer>
                 )
