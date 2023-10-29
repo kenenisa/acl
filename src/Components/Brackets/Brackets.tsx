@@ -35,7 +35,9 @@ function Brackets() {
     return (
         <Box sx={{ pb: 5 }} className="parallax groupParallax">
             <Typography variant="h4">Knockouts Stage <Typography variant="subtitle1">(scroll from here)</Typography></Typography>
-            <SingleElimination matches={window.data.brackets} />
+            <a href="#bracket" id="bracket">
+                <SingleElimination matches={window.data.brackets} />
+            </a>
         </Box>
     )
 }
