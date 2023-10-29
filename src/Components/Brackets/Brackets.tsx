@@ -20,8 +20,8 @@ export const SingleElimination = ({ matches }: any) => {
                     <SVGViewer
                         width={finalWidth + 100}
                         height={finalHeight + 100}
-                        background="#3a1574"
-                        SVGBackground="#3a1574"
+                        background="#00000000"
+                        SVGBackground="#00000000"
                         {...props}
                     >
                         {children}

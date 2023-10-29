@@ -20,7 +20,7 @@
 
 .parallax {
   /* The image used */
-  /* background-image: url("champ.png"); */
+  background-image: url("champ.png");
 
   /* Set a specific height */
   /* min-height: 500px; */
