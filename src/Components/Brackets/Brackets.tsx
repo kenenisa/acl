@@ -33,7 +33,7 @@ export const SingleElimination = ({ matches }: any) => {
 }
 function Brackets() {
     return (
-        <Box sx={{}}>
+        <Box sx={{pb:5}}>
             <Typography variant="h5">Brackets</Typography>
             <SingleElimination matches={window.data.brackets} />
         </Box>
