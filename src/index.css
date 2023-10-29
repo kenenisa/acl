@@ -25,7 +25,7 @@
 
 @media only screen and (max-width: 768px) {
   .parallax.groupParallax {
-    background-image: url("champ.png");
+    background-image: url("/champ.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@
 
 @media only screen and (min-width: 768px) {
   .parallax {
-    background-image: url("champ.png");
+    background-image: url("/champ.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
